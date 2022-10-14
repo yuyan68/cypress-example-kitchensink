@@ -41,7 +41,7 @@ jobs:
         uses: cypress-io/github-action@v4
         timeout-minutes: 5
         with:
-          record: true
+          # record: true
           parallel: true
           group: GH Action parallel
           start: npm start
@@ -73,7 +73,7 @@ jobs:
         uses: cypress-io/github-action@v4
         timeout-minutes: 10
         with:
-          record: true
+          # record: true
           parallel: true
           group: Parallel 2x on ${{ matrix.os }}
           # on Mac and Linux we can use "npm start"
